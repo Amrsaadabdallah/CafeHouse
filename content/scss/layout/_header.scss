@@ -1,0 +1,193 @@
+//#region ### start ############################# navBar ##############################################
+nav{
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+    background-color:#000 ;
+
+    div.navContent{
+        position: relative;
+        // border: 2px solid red;
+
+        padding: size(0);
+        @include mdUpMedia{ padding: size(10) size(0);}
+
+        display: flex;
+
+        flex-direction: column;
+        @include mdUpMedia{
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        div.logo{
+            // border: 2px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+            img{
+                width: size(32);
+                height: size(41);
+            }
+
+            span{
+                font-family: $headingFont ;
+                font-size: size(40);
+                font-weight: 500;
+                color: $mainColor;
+                display: block;
+                margin-left: size(15) ;
+            }
+        }
+
+        button#toggleBtn{
+            display: block ;
+            @include mdUpMedia{ display: none;}
+
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            margin:0px;
+            padding: 0px;
+            border: none ;
+            background-color: transparent;
+            cursor: pointer;
+
+            span{
+                display: block;
+                background-color: $mainColor;;
+                width: 33px;
+                height: 5px;
+                border-radius: 2px;
+            }
+
+            span:not(:last-child){ margin-bottom: 7px; }
+
+        }
+
+        div.navList{
+            position: absolute;
+            top: 102%;
+            right: 0px;
+            border-radius: size(10);
+            background-color: rgba(#000,0.7);
+            z-index: 5;
+
+            @include mdUpMedia{  
+                position: static;
+                top: 100%;
+                right: 33px;
+                border-radius: size(0);
+                background-color: transparent;
+            }
+
+            @include xsUpMedia{  display: none ; }
+            @include mdUpMedia{  display: block ; }
+            
+
+            ul{ 
+                display: flex;
+                justify-content: center;
+
+                flex-direction: column;
+                @include mdUpMedia{  flex-direction: row; }
+
+
+                li{
+                    text-align: center;
+
+                    a{
+                        font-family: $paragraphFont ;
+                        font-weight: 900;
+                        font-size: size(14);
+
+                        display: block;
+                        padding: size(15) size(20);
+                        cursor: pointer;
+                        color: #FFF;
+
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        transition: all 0.3s ease;
+                    }
+
+                    &:hover:not(.active) a { color: $mainColor; }
+
+                    &.active a{  color: $mainColor; }
+
+                }
+            }
+        }
+
+    }
+}
+//#endregion  ### end ##################################################################################
+
+
+
+
+
+//#region ### start ############################# Header Section ##############################################
+header{
+    background-color: rgb(228, 228, 228);
+    padding-bottom: size($headerTableOffset) ;
+
+    div.headerLayer{
+        background-color: rgb(40, 39, 38);
+        padding-bottom: (size($headerTableOffset)) ;
+    
+        div.headerContent{
+            position: relative;
+            top: (-1*size($headerTableOffset)) ;
+            z-index: 2;
+            margin-bottom: (-3*size($headerTableOffset));
+
+            div.text{
+                margin: auto;
+                max-width: 650px;
+                text-align: center;
+
+                h2{
+                    margin-bottom: size(0);
+                    font-family: $headingFont;
+                    font-size: size(55);
+                    font-weight: 900;
+                    text-align: center;
+                    color: #fff;
+                }
+
+                h1{
+                    font-family: "Times New Roman", serif;
+                    font-size: size(65);
+                    font-weight: 500;
+                    margin: size(0) ;
+                    padding: size(0);
+                    text-align: center;
+                    color: $mainColor;
+                    text-transform: uppercase;
+                }
+
+                p{
+                    font-family: $paragraphFont ;
+                    font-size: size(14);
+                    color: rgb(148, 148, 148);
+                    text-align: left;
+                    span{ color: $mainColor; }
+                }
+
+                button{  margin-top: size(25); }
+            }
+
+            div.tableImage{
+                text-align: center;
+                img{ width: 100%; }
+            }
+        }
+
+    }
+}
+//#endregion  ### end ##################################################################################################### 

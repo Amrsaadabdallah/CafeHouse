@@ -1,0 +1,20 @@
+* , *::after , *::before{ box-sizing: border-box; }
+
+html{     
+    font-size: #{$base-size}px ; 
+    // @include smMedia{ font-size: #{$base-size / 2}px  ; }
+}
+
+
+body{ 
+    //to hidden scroll untill page load and preloader hidden.
+    overflow: hidden;
+}
+
+
+
+ol, ul { 
+    list-style-type: none;
+    padding: 0px; 
+    margin: 0px ; 
+}   

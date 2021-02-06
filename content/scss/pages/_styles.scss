@@ -1,0 +1,28 @@
+// import helpers fonts files
+@import '../helpers/fonts' ;
+
+
+// import helpers styling files
+@import '../helpers/variables' ;
+@import '../helpers/functions' ;
+@import '../helpers/mixins' ;
+@import '../helpers/placeholders' ;
+
+
+// import component styling files
+// @import '../components/buttons' ;
+
+
+// import styling page parts files
+@import '../helpers/global-styling';
+
+
+@import '../components/preloader' ;
+@import '../components/scrollTopBtn' ;
+@import '../components/scrollbar' ;
+@import '../components/buttons' ;
+@import '../components/headingWithRuler' ;
+
+@import '../layout/header' ;
+@import '../layout/footer' ;
+

@@ -1,0 +1,14 @@
+//#region ### start #############################  scrollbar Styling ##############################################
+body::-webkit-scrollbar {
+    width: size(12);
+  }
+   
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: #c79c60;
+    border-radius: 4px;
+  }
+//#endregion  ### end ##################################################################################################### 

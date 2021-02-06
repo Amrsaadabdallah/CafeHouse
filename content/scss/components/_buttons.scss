@@ -1,0 +1,16 @@
+button.special{
+    font-family: $paragraphFont ;
+    background-image: url("../assets/images/tm-brown-button.png");
+    width: 196px;
+    height: 46px;
+    text-transform: uppercase;
+    font-size: size(16);
+    color: $mainColor;
+    border:none;
+    border-radius: size(15);
+    transition: all 0.3s ease 0s;
+
+    &:hover{
+        color: #fff;
+    }
+}

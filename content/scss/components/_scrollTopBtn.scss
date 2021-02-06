@@ -1,0 +1,38 @@
+//#region ### start #############################  scrollTopBtn ##############################################
+button#scrollTopBtn{
+    width: 50px;
+    height: 50px;
+    font-weight: bolder;
+    border-radius: size(5);
+
+    // color: tomato;
+    background-color:#706f6f;
+    opacity: 0.7;
+    
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    z-index: 6;
+
+    cursor: pointer;
+    display: none;
+
+    border: 3px solid $mainColor;
+
+
+    transition: 0.3s all ease-in-out;
+
+    i{
+        line-height: size(30);
+        // display: block;
+        font-size: size(30);
+
+    }
+}
+
+button#scrollTopBtn:hover{
+    border: 3px solid $mainColor;
+    // color: $mainColor;
+    opacity: 1;
+}
+//#endregion  ### end ##################################################################################################### 

@@ -1,0 +1,22 @@
+//Local Font ==> font-family: Damion , cursive  , sans-serif ; 
+@font-face {
+    font-family: 'Damion';
+    src: url('../../content/fonts/LocalFonts/Damion/Damion.eot'); /* IE9 Compat Modes */
+    src: url('../../content/fonts/LocalFonts/Damion/Damion.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../../content/fonts/LocalFonts/Damion/Damion.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../../content/fonts/LocalFonts/Damion/Damion.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../../content/fonts/LocalFonts/Damion/Damion.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../../content/fonts/LocalFonts/Damion/Damion.svg#svgFontName') format('svg'); /* Legacy iOS */
+  }
+
+
+//Local Font ==> font-family: 'Open Sans', sans-serif;
+  @font-face {
+    font-family: 'Open Sans';
+    src: url('../../content/fonts/LocalFonts/OpenSans/OpenSans.eot'); /* IE9 Compat Modes */
+    src: url('../../content/fonts/LocalFonts/OpenSans/OpenSans.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../../content/fonts/LocalFonts/OpenSans/OpenSans.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../../content/fonts/LocalFonts/OpenSans/OpenSans.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../../content/fonts/LocalFonts/OpenSans/OpenSans.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../../content/fonts/LocalFonts/OpenSans/OpenSans.svg#svgFontName') format('svg'); /* Legacy iOS */
+  }

@@ -1,0 +1,30 @@
+//#region ### start ############# headingWithRule Styling Component #########################
+div.headingWithRule{
+    display: flex;
+    align-items: center;
+    margin-bottom: size(35);
+
+    img{
+        display: block;
+        margin-right: size(7);
+    }
+
+    h2{
+        font-size: size(40);
+        font-weight: bold;
+        color: $mainColor;
+        font-family: $headingFont;
+        margin-bottom: size(0);
+        padding: size(0);
+    }
+
+    hr{
+        flex-grow: 1;
+        margin-left: size(25);
+        margin-bottom: size(20);
+        align-self: flex-end;
+        border-color: $mainColor;
+    }
+
+}
+//#endregion  ### end ########################################################################

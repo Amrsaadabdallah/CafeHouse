@@ -1,0 +1,916 @@
+@font-face {
+  font-family: 'Damion';
+  src: url("../../content/fonts/LocalFonts/Damion/Damion.eot");
+  /* IE9 Compat Modes */
+  src: url("../../content/fonts/LocalFonts/Damion/Damion.eot?#iefix") format("embedded-opentype"), url("../../content/fonts/LocalFonts/Damion/Damion.woff2") format("woff2"), url("../../content/fonts/LocalFonts/Damion/Damion.woff") format("woff"), url("../../content/fonts/LocalFonts/Damion/Damion.ttf") format("truetype"), url("../../content/fonts/LocalFonts/Damion/Damion.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../../content/fonts/LocalFonts/OpenSans/OpenSans.eot");
+  /* IE9 Compat Modes */
+  src: url("../../content/fonts/LocalFonts/OpenSans/OpenSans.eot?#iefix") format("embedded-opentype"), url("../../content/fonts/LocalFonts/OpenSans/OpenSans.woff2") format("woff2"), url("../../content/fonts/LocalFonts/OpenSans/OpenSans.woff") format("woff"), url("../../content/fonts/LocalFonts/OpenSans/OpenSans.ttf") format("truetype"), url("../../content/fonts/LocalFonts/OpenSans/OpenSans.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+}
+
+/* ######################### Function to convert px value into rem ####################### */
+/* ####End ############################################################################# */
+/* ################################ mixin Media ######################################### */
+/* ####End ############################################################################# */
+/* ################################  Start with mixin Media and up ######################################### */
+/* ####End ############################################################################# */
+footer div.content, section.bestCoffeeSection, section.PopularItemsSection, section.todaySpecialSection, section.dailyMenuSection, section.OurMenusSection, section.sendMessageSection {
+  padding: 3.125rem 0rem;
+}
+
+section.bestCoffeeSection, section.PopularItemsSection, section.todaySpecialSection, section.dailyMenuSection, section.OurMenusSection, section.sendMessageSection {
+  background-color: #e4e4e4;
+}
+
+footer div.content {
+  background-color: #302f2f;
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  overflow: hidden;
+}
+
+ol, ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+@font-face {
+  font-family: Montserrat-Thin;
+  src: url(Montserrat-Thin.ttf);
+}
+
+.preload {
+  width: 100%;
+  height: 100%;
+  background-color: #e4e4e4;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+  color: #c79c60;
+  /**/
+}
+
+.preload div.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.preload div.content .loader-frame {
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  margin-top: 10%;
+  position: relative;
+}
+
+.preload div.content .loader-frame .loader1 {
+  position: absolute;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  border-top: 5px solid #464646;
+  border-bottom: 5px solid #505050;
+  -webkit-animation: clockwisespin 5s linear 3;
+          animation: clockwisespin 5s linear 3;
+}
+
+.preload div.content .loader-frame .circle {
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  background-color: white 0%;
+  border: 1px solid #464646;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.preload div.content .loader-frame .hello {
+  font-family: "Damion", "cursive", "sans-serif";
+  font-size: 2.5rem;
+  text-align: center;
+  padding-top: 30%;
+}
+
+.preload div.content .loader-frame .wellcome {
+  font-family: "Damion", "cursive", "sans-serif";
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+@-webkit-keyframes clockwisespin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes clockwisespin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+button#scrollTopBtn {
+  width: 50px;
+  height: 50px;
+  font-weight: bolder;
+  border-radius: 0.3125rem;
+  background-color: #706f6f;
+  opacity: 0.7;
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  z-index: 6;
+  cursor: pointer;
+  display: none;
+  border: 3px solid #c79c60;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+button#scrollTopBtn i {
+  line-height: 1.875rem;
+  font-size: 1.875rem;
+}
+
+button#scrollTopBtn:hover {
+  border: 3px solid #c79c60;
+  opacity: 1;
+}
+
+body::-webkit-scrollbar {
+  width: 0.75rem;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #c79c60;
+  border-radius: 4px;
+}
+
+button.special {
+  font-family: "Open Sans", sans-serif;
+  background-image: url("../assets/images/tm-brown-button.png");
+  width: 196px;
+  height: 46px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #c79c60;
+  border: none;
+  border-radius: 0.9375rem;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+button.special:hover {
+  color: #fff;
+}
+
+div.headingWithRule {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2.1875rem;
+}
+
+div.headingWithRule img {
+  display: block;
+  margin-right: 0.4375rem;
+}
+
+div.headingWithRule h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #c79c60;
+  font-family: "Damion", "cursive", "sans-serif";
+  margin-bottom: 0rem;
+  padding: 0rem;
+}
+
+div.headingWithRule hr {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-left: 1.5625rem;
+  margin-bottom: 1.25rem;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  border-color: #c79c60;
+}
+
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+  background-color: #000;
+}
+
+nav div.navContent {
+  position: relative;
+  padding: 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  nav div.navContent {
+    padding: 0.625rem 0rem;
+  }
+}
+
+@media (min-width: 768px) {
+  nav div.navContent {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+nav div.navContent div.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav div.navContent div.logo img {
+  width: 2rem;
+  height: 2.5625rem;
+}
+
+nav div.navContent div.logo span {
+  font-family: "Damion", "cursive", "sans-serif";
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #c79c60;
+  display: block;
+  margin-left: 0.9375rem;
+}
+
+nav div.navContent button#toggleBtn {
+  display: block;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  nav div.navContent button#toggleBtn {
+    display: none;
+  }
+}
+
+nav div.navContent button#toggleBtn span {
+  display: block;
+  background-color: #c79c60;
+  width: 33px;
+  height: 5px;
+  border-radius: 2px;
+}
+
+nav div.navContent button#toggleBtn span:not(:last-child) {
+  margin-bottom: 7px;
+}
+
+nav div.navContent div.navList {
+  position: absolute;
+  top: 102%;
+  right: 0px;
+  border-radius: 0.625rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 5;
+}
+
+@media (min-width: 768px) {
+  nav div.navContent div.navList {
+    position: static;
+    top: 100%;
+    right: 33px;
+    border-radius: 0rem;
+    background-color: transparent;
+  }
+}
+
+@media (min-width: 0px) {
+  nav div.navContent div.navList {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  nav div.navContent div.navList {
+    display: block;
+  }
+}
+
+nav div.navContent div.navList ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  nav div.navContent div.navList ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+nav div.navContent div.navList ul li {
+  text-align: center;
+}
+
+nav div.navContent div.navList ul li a {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 900;
+  font-size: 0.875rem;
+  display: block;
+  padding: 0.9375rem 1.25rem;
+  cursor: pointer;
+  color: #FFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+nav div.navContent div.navList ul li:hover:not(.active) a {
+  color: #c79c60;
+}
+
+nav div.navContent div.navList ul li.active a {
+  color: #c79c60;
+}
+
+header {
+  background-color: #e4e4e4;
+  padding-bottom: 6.25rem;
+}
+
+header div.headerLayer {
+  background-color: #282726;
+  padding-bottom: 6.25rem;
+}
+
+header div.headerLayer div.headerContent {
+  position: relative;
+  top: -6.25rem;
+  z-index: 2;
+  margin-bottom: -18.75rem;
+}
+
+header div.headerLayer div.headerContent div.text {
+  margin: auto;
+  max-width: 650px;
+  text-align: center;
+}
+
+header div.headerLayer div.headerContent div.text h2 {
+  margin-bottom: 0rem;
+  font-family: "Damion", "cursive", "sans-serif";
+  font-size: 3.4375rem;
+  font-weight: 900;
+  text-align: center;
+  color: #fff;
+}
+
+header div.headerLayer div.headerContent div.text h1 {
+  font-family: "Times New Roman", serif;
+  font-size: 4.0625rem;
+  font-weight: 500;
+  margin: 0rem;
+  padding: 0rem;
+  text-align: center;
+  color: #c79c60;
+  text-transform: uppercase;
+}
+
+header div.headerLayer div.headerContent div.text p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.875rem;
+  color: #949494;
+  text-align: left;
+}
+
+header div.headerLayer div.headerContent div.text p span {
+  color: #c79c60;
+}
+
+header div.headerLayer div.headerContent div.text button {
+  margin-top: 1.5625rem;
+}
+
+header div.headerLayer div.headerContent div.tableImage {
+  text-align: center;
+}
+
+header div.headerLayer div.headerContent div.tableImage img {
+  width: 100%;
+}
+
+footer div.content {
+  color: white;
+}
+
+footer div.content h3 {
+  margin: 1.25rem 0rem;
+  font-family: "Damion", "cursive", "sans-serif";
+  font-size: 1.3125rem;
+  font-weight: 700;
+  color: #c79c60;
+}
+
+footer div.content p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.875rem;
+  font-weight: normal;
+}
+
+footer div.content div.mainMenu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer div.content div.mainMenu ul li {
+  width: 100%;
+}
+
+footer div.content div.mainMenu ul li:first-child {
+  margin-top: 0rem;
+}
+
+footer div.content div.mainMenu ul li:not(:first-child) {
+  margin-top: 0.9375rem;
+}
+
+footer div.content div.mainMenu ul li a {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+footer div.content div.mainMenu ul li a:hover {
+  color: #c79c60;
+}
+
+footer div.content div.socialLinks ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 15.625rem;
+}
+
+footer div.content div.socialLinks ul li a {
+  text-decoration: none;
+}
+
+footer div.content div.socialLinks ul li a i {
+  display: block;
+  font-size: 1.25rem;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  border-radius: 3px;
+  background-color: #505050;
+  color: white;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+footer div.content div.socialLinks ul li a i:hover {
+  background-color: #BB8232;
+}
+
+footer div.copyRight {
+  background-color: #FFF;
+  padding: 1.875rem 0rem;
+}
+
+footer div.copyRight p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.875rem;
+  color: #333;
+  margin: 0rem;
+  text-align: center;
+}
+
+footer div.copyRight p a {
+  color: #337ab7;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+footer div.copyRight p a:hover {
+  color: #23527c;
+  text-decoration: underline;
+}
+
+section.bestCoffeeSection div.content h2 {
+  font-size: 2.5rem;
+  font-weight: normal;
+  font-family: "Damion", "cursive", "sans-serif";
+  color: #c79c60;
+  margin-bottom: 0rem;
+}
+
+section.bestCoffeeSection div.content h3 {
+  font-size: 1.875rem;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+}
+
+section.bestCoffeeSection div.content p {
+  font-size: 0.875rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section.bestCoffeeSection div.content p span {
+  color: #0066cc;
+}
+
+section.bestCoffeeSection div.image {
+  margin: auto;
+  width: 10.5rem;
+  height: 11.125rem;
+  background: url("../assets/images/shadow.png") center bottom no-repeat;
+}
+
+section.bestCoffeeSection div.image img {
+  width: 100%;
+  border-radius: 50%;
+  border: 0.625rem solid #fff;
+}
+
+section.PopularItemsSection {
+  padding-bottom: 0rem;
+}
+
+section.PopularItemsSection div.popularItems div.itemContainer div.item {
+  background-image: url("../assets/images/popular-item-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+section.PopularItemsSection div.popularItems div.itemContainer div.item img {
+  display: block;
+  padding: 0rem 0.375rem 0rem 0.1875rem;
+  width: 100%;
+}
+
+section.PopularItemsSection div.popularItems div.itemContainer div.item div.content {
+  position: relative;
+  text-align: center;
+  padding: 0rem 1.875rem 3.75rem;
+  margin-bottom: 3.5625rem;
+}
+
+section.PopularItemsSection div.popularItems div.itemContainer div.item div.content h3 {
+  font-family: "Damion", "cursive", "sans-serif";
+  font-size: 2.5rem;
+  margin: 0rem;
+  padding: 0rem;
+  margin-bottom: 0rem;
+  color: #aeaeae;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid #aeaeae;
+}
+
+section.PopularItemsSection div.popularItems div.itemContainer div.item div.content p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.875rem;
+  color: #333;
+  margin-top: 1.25rem;
+}
+
+section.PopularItemsSection div.popularItems div.itemContainer div.item div.content div.orderContainer {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: inline-block;
+  background-color: #524c4c;
+  padding: 0.4375rem;
+  border-radius: 50%;
+}
+
+section.PopularItemsSection div.popularItems div.itemContainer div.item div.content div.orderContainer a.order {
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-family: "Damion", "cursive", "sans-serif";
+  font-style: normal;
+  color: #aeaeae;
+  display: block;
+  width: 6.25rem;
+  height: 6.25rem;
+  line-height: 5.8125rem;
+  text-align: center;
+  border-radius: 50%;
+  text-decoration: none;
+  border: 2px solid #aeaeae;
+}
+
+section.PopularItemsSection div.popularItems div.itemContainer div.item:hover {
+  background-image: url("../assets/images/popular-item-bg-hover.png");
+}
+
+section.PopularItemsSection div.popularItems div.itemContainer div.item:hover div.content h3 {
+  color: #c79c60;
+  border-bottom-color: #c79c60;
+}
+
+section.PopularItemsSection div.popularItems div.itemContainer div.item:hover div.content div.orderContainer a {
+  color: #c79c60;
+  border-color: #c79c60;
+}
+
+section.PopularItemsSection div.popularItems div.itemContainer {
+  margin-bottom: 2.1875rem;
+}
+
+section.todaySpecialSection div.imageContainer {
+  position: relative;
+  border: 0.625rem solid #FFF;
+}
+
+section.todaySpecialSection div.imageContainer img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+section.todaySpecialSection div.imageContainer div.overlay {
+  width: 100%;
+  position: absolute;
+  bottom: 0rem;
+  left: 0rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 12px 10px 5px;
+  font-family: "Open Sans", sans-serif;
+}
+
+section.todaySpecialSection div.imageContainer div.overlay a {
+  color: inherit;
+  text-decoration: none;
+}
+
+section.todaySpecialSection div.imageContainer div.overlay a h3 {
+  font-size: 1.5rem;
+}
+
+section.todaySpecialSection div.imageContainer div.overlay a p {
+  font-size: 0.875rem;
+}
+
+section.dailyMenuSection div.image img {
+  width: 100%;
+}
+
+section.dailyMenuSection div.content {
+  font-size: 0.875rem;
+}
+
+section.dailyMenuSection div.content p {
+  font-family: "Open Sans", sans-serif;
+  color: #333;
+}
+
+section.dailyMenuSection div.content ol {
+  list-style-type: decimal;
+  margin-top: 1rem;
+  margin-bottom: 0.0625rem;
+  margin-left: 3.125rem;
+}
+
+section.dailyMenuSection button {
+  margin-top: 1.5625rem;
+}
+
+section.OurMenusSection div.menuList {
+  position: relative;
+  width: 15.125rem;
+  padding-top: 0.4375rem;
+}
+
+section.OurMenusSection div.menuList img {
+  display: block;
+  width: 100%;
+}
+
+section.OurMenusSection div.menuList ul {
+  position: absolute;
+  top: 0.75rem;
+  left: 0rem;
+  width: 100%;
+}
+
+section.OurMenusSection div.menuList ul li a {
+  margin: auto;
+  text-align: center;
+  display: block;
+  width: 100%;
+  color: #7c6a51;
+  padding: 0.4375rem;
+  line-height: 1.25rem;
+  text-decoration: none;
+}
+
+section.OurMenusSection div.menuList ul li.active a {
+  color: #c79c60;
+}
+
+section.OurMenusSection div.menuList ul li:hover a {
+  color: #c79c60;
+}
+
+section.OurMenusSection div.content div.product {
+  background-color: #fff;
+  padding: 0.625rem;
+  cursor: pointer;
+}
+
+section.OurMenusSection div.content div.product div.productImage img {
+  display: block;
+  width: 8.5rem;
+  height: 8.5rem;
+}
+
+section.OurMenusSection div.content div.product div.productText {
+  margin: 0rem 0.625rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+@media (max-width: 575.98px) {
+  section.OurMenusSection div.content div.product div.productText {
+    text-align: center;
+  }
+}
+
+section.OurMenusSection div.content div.product div.productText h3 {
+  font-size: 1.5rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+section.OurMenusSection div.content div.product div.productText p {
+  color: #333;
+  font-size: 0.875rem;
+}
+
+section.OurMenusSection div.content div.product div.productPrice {
+  background-color: #524c4c;
+  padding: 0.625rem;
+  border-radius: 50%;
+}
+
+section.OurMenusSection div.content div.product div.productPrice a {
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.5625rem;
+  font-family: "Damion", "cursive", "sans-serif";
+  display: block;
+  border: 2px solid #aeaeae;
+  color: #aeaeae;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  line-height: 3.75rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+section.OurMenusSection div.content div.product div.productPrice a sub {
+  font-size: 3.125rem;
+}
+
+section.OurMenusSection div.content div.product:hover div.productText h3, section.OurMenusSection div.content div.product:hover div.productPrice a {
+  color: #c79c60;
+}
+
+section.OurMenusSection div.content div.product:hover div.productPrice a {
+  border: 2px solid #c79c60;
+}
+
+section.sendMessageSection form input, section.sendMessageSection form textarea {
+  display: block;
+  margin-bottom: 0.9375rem;
+  width: 100%;
+  border: 1px solid #c79c60;
+  border-radius: 10px;
+  padding: 0.375rem 0.75rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: #555;
+  background-color: #fff;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
+  outline: none;
+}
+
+section.sendMessageSection form input:focus, section.sendMessageSection form textarea:focus {
+  outline: none;
+  border-color: #885d21;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.8), 0 0 8px rgba(199, 156, 96, 0.6);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.8), 0 0 8px rgba(199, 156, 96, 0.6);
+}
+
+section.sendMessageSection div.map {
+  border: 0.125rem solid #c79c60;
+  border-radius: 0.625rem;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
+}
+
+section.sendMessageSection div.map iframe {
+  width: 100%;
+  height: 21.875rem;
+  border-radius: 0.625rem;
+}
+/*# sourceMappingURL=styles.css.map */

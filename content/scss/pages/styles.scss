@@ -1,0 +1,461 @@
+@import 'styles' ;
+
+
+
+
+//#region ### start #############################  Best Coffee Section ##############################################
+section.bestCoffeeSection{
+    @extend %sectionPadding ;
+    @extend %sectionBgLight ;
+
+    div.content{
+
+        h2{
+            font-size: size(40);
+            font-weight: normal ;
+            font-family: $headingFont;
+            color: $mainColor;
+            margin-bottom: size(0);
+        }
+
+        h3{
+            font-size: size(30);
+            font-weight: bold ;
+            font-family: $paragraphFont;
+        }
+
+        p{
+            font-size: size(14);
+            font-family: Arial, Helvetica, sans-serif;
+
+            span{
+                color: rgb(0, 102, 204);
+            }
+        }
+
+    }
+
+    div.image{
+        margin: auto;
+        width: size(168) ;
+        height: size(178);
+        background: url("../assets/images/shadow.png") center bottom no-repeat;
+
+        img{
+            width: 100%;
+            border-radius: 50%;
+            border: size(10) solid #fff;
+        }
+    }
+
+}
+//#endregion  ### end ##################################################################################################### 
+
+
+
+
+
+//#region  ### start ###########################  Popular Items Section ##############################
+section.PopularItemsSection{
+    @extend %sectionPadding ;
+    @extend %sectionBgLight ;
+    padding-bottom: size(0);
+
+    // div.headingWithRule{
+    //     display: flex;
+    //     align-items: center;
+    //     margin-bottom: size(35);
+
+    //     img{
+    //         display: block;
+    //         margin-right: size(7);
+    //     }
+
+    //     h2{
+    //         font-size: size(40);
+    //         font-weight: bold;
+    //         color: $mainColor;
+    //         font-family: $headingFont;
+    //         margin-bottom: size(0);
+    //         padding: size(0);
+    //     }
+
+    //     hr{
+    //         flex-grow: 1;
+    //         margin-left: size(25);
+    //         margin-bottom: size(20);
+    //         align-self: flex-end;
+    //     }
+
+    // }
+
+    div.popularItems{
+        // border: 2px solid red;
+
+        div.itemContainer{
+
+            div.item{
+                // border: 2px solid red;
+                background-image: url("../assets/images/popular-item-bg.png");
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+
+                img{
+                    display: block;
+                    padding: size(0) size(6) size(0) size(3);
+                    width: 100%;
+                }
+
+
+                div.content{
+                    position: relative;
+                    // border: 2px solid red;
+                    text-align: center;
+                    padding: size(0) size(30)  size(60) ;
+                    margin-bottom: size(57);
+
+                    h3{
+                        font-family:$headingFont;
+                        font-size: size(40);
+                        margin: size(0);
+                        padding: size(0);
+                        margin-bottom: size(0);
+                        color: rgb(174,174,174);
+                        transition: all 0.3s ease;
+                        border-bottom: 2px solid rgb(174,174,174) ;
+
+                        // span{ font-size: size(70);  }
+                        // &:hover{ 
+                        //     color: $mainColor ; 
+                        //     border-bottom-color: $mainColor ;
+                        // }
+                    }
+
+                    p{
+                        font-family:$paragraphFont ;
+                        font-size: size(14); 
+                        color: #333;
+                        margin-top: size(20) ;
+                    }
+
+                    div.orderContainer{
+                        position: absolute;
+                        top: 100% ;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+
+                        display: inline-block;
+                        background-color: rgb(82, 76, 76);
+                        padding: size(7);
+                        border-radius: 50%;
+                        a.order{
+                            font-size: size(20);
+                            font-weight: bold;
+                            font-family: $headingFont ;
+                            font-style: normal;
+                            color: rgb(174,174,174);
+                            display: block;
+                            width: size(100);
+                            height: size(100);
+                            line-height: size(93);
+                            text-align: center;
+                            border-radius: 50%;
+                            text-decoration: none;
+                            border:2px solid rgb(174,174,174);
+                        }
+                    }
+
+                    
+                }
+
+                &:hover{
+                    background-image: url("../assets/images/popular-item-bg-hover.png");
+
+                    div.content {
+                        h3{ 
+                            color: $mainColor ; 
+                            border-bottom-color: $mainColor ;
+                        }
+        
+                        div.orderContainer a{
+                            color: $mainColor;
+                            border-color: $mainColor
+                        }
+                    }
+
+                }
+
+                
+            }
+
+
+
+            &{
+                margin-bottom: size(35);
+            }
+
+        }
+
+    }
+
+}
+//#endregion  ### end ##################################################################################################### 
+
+
+
+
+
+//#region  ### start ###########################  Today Special Section ##############################
+section.todaySpecialSection{
+    @extend %sectionPadding ;
+    @extend %sectionBgLight ;
+
+
+    div.imageContainer{
+        position: relative;
+        border: size(10) solid #FFF;
+
+        img{
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        div.overlay{
+            width: 100%;
+            position: absolute;
+            bottom: size(0) ;
+            left: size(0) ;
+            
+            color: white;
+            background: rgba(0,0,0,0.6);
+            padding: 12px 10px 5px;
+
+            font-family: $paragraphFont;
+
+            a{
+                color: inherit;
+                text-decoration: none;
+
+                h3{
+                    font-size: size(24);
+                }
+
+                p{
+                    font-size: size(14);
+                }
+            }
+        }
+
+    }
+
+}
+//#endregion  ### end ##################################################################################################### 
+
+
+
+
+
+//#region  ### start ###########################  Daily Menu Section  ##############################
+section.dailyMenuSection{
+    @extend %sectionPadding ;
+    @extend %sectionBgLight ;
+
+
+    div.image{
+        img{ width: 100%; }
+    }
+
+    div.content{
+
+        font-size: size(14);
+
+        p{
+            font-family: $paragraphFont;
+            color: #333;
+        }
+        
+        ol{
+            list-style-type: decimal;
+            margin-top:  size(16);
+            margin-bottom: size(1);
+            margin-left: size(50);
+          
+        }
+    }
+
+    button{
+        margin-top: size(25);
+    }
+
+
+}
+//#endregion  ### end ##################################################################################################### 
+
+
+
+
+
+//#region ### start #############################  Our Menus Section ##############################################
+section.OurMenusSection{
+    @extend %sectionPadding ;
+    @extend %sectionBgLight ;
+
+    div.menuList{
+        position: relative;
+        width: size(242) ;
+        padding-top: size(7) ;
+      
+        img{
+            display: block;
+            width: 100%;
+        }
+
+        ul{ 
+            position: absolute;
+            top: size(12) ;
+            left: size(0) ;
+            width: 100%;
+
+            li{
+
+                a{
+                    margin: auto;
+                    text-align: center;
+                    display: block;
+                    width: 100%;
+                    color: #7c6a51;
+                    padding: size(7);
+                    line-height: size(20);
+                   text-decoration: none;
+                }
+
+                &.active a{ color: #c79c60 ; }
+                &:hover a{ color: #c79c60 ;}
+            }
+        }
+       
+    }
+
+    div.content{
+
+
+        div.product{
+            background-color: #fff;
+            padding: size(10);
+            cursor: pointer;
+
+            div.productImage{
+                img{
+                    display: block;
+                    width: size(136);
+                    height: size(136);
+                }
+            }
+
+            div.productText{
+                margin: size(0 )size(10);
+                font-family: $paragraphFont;
+                @include xsMedia{ text-align: center; }
+
+                h3{
+                    font-size: size(24);
+                    transition: all 0.3s ease;
+                  }
+
+                p{
+                    color: #333;
+                    font-size: size(14);
+                }
+            }
+
+            div.productPrice{
+                background-color: rgb(82, 76, 76);                
+                padding: size(10);
+                border-radius: 50%;
+                
+                a{           
+                    text-decoration: none;
+                    text-align: center;             
+                    font-size: size(25);
+                    font-family: $headingFont;
+                    display: block;
+                    border: 2px solid rgb(174,174,174);
+                    color: rgb(174,174,174) ;
+                    border-radius: 50%;
+                    width: size(80);
+                    height: size(80);
+                    line-height: size(60);
+                    transition: all 0.3s ease;
+
+                    sub{  font-size: size(50); }
+                }
+            }
+
+            &:hover{
+                div.productText h3 , div.productPrice  a { color: #c79c60; }
+                div.productPrice a{ border: 2px solid #c79c60; }
+            }
+        }
+    }
+}
+//#endregion  ### end ##################################################################################################### 
+
+
+
+
+
+//#region ### start #############################  send Message Section ##############################################
+section.sendMessageSection{
+    @extend %sectionPadding ;
+    @extend %sectionBgLight ;
+
+    form{
+
+        input,textarea{
+            display: block;
+            margin-bottom: size(15);
+            width: 100% ;
+            border: 1px solid #c79c60;
+            border-radius: 10px;
+
+            padding: size(6)  size(12) ;
+            font-family: $paragraphFont;
+            font-size: size(14);
+            font-weight: bold;
+            // line-height: 1.42857143;
+
+            color: #555;
+            background-color: #fff;
+            box-shadow:  0 1px 1px rgba(0, 0 ,0 , 0.8);
+            outline: none;
+
+            &:focus{  
+                outline: none;
+                border-color: rgb(136, 93, 33);
+                box-shadow:  0 1px 1px rgba(0 , 0 ,  0 , 0.8), 0 0 8px rgba(199, 156, 96, 0.6); 
+            }
+        }
+
+    }
+
+    div.map{
+        // border: size(3) solid #555;
+        border: size(2) solid #c79c60;
+        border-radius: size(10) ;
+        box-shadow:  0 1px 1px rgba(0, 0 ,0 , 0.8);
+
+
+        iframe{
+            width: 100%;
+            height: size(350);
+            border-radius: size(10) ;
+        }
+    }
+
+}
+//#endregion  ### end ##################################################################################################### 
+
+
+
+

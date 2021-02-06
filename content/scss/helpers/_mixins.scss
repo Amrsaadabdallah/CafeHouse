@@ -1,0 +1,31 @@
+/* ################################ mixin Media ######################################### */
+// Extra small devices (portrait phones, less than 576px)
+@mixin xsMedia {  @media (max-width: 575.98px) {  @content ; } }
+
+// Small devices (landscape phones, 576px and up)
+@mixin smMedia {  @media (min-width: 576px) and (max-width: 767.98px) {  @content ; } }
+
+// Medium devices (tablets, 768px and up)
+@mixin mdMedia {  @media (min-width: 768px) and (max-width: 991.98px) { @content ; } }
+
+// Large devices (desktops, 992px and up)
+@mixin lgMedia {  @media (min-width: 992px) and (max-width: 1199.98px) { @content ; } }
+
+// Extra large devices (large desktops, 1200px and up)
+@mixin xlMedia {  @media (min-width: 1200px) { @content; } }
+/* ####End ############################################################################# */
+
+
+/* ################################  Start with mixin Media and up ######################################### */
+//  start with Extra small devices to up
+@mixin xsUpMedia {  @media (min-width: 0px) {  @content ; } }
+
+// start with Small devices to up
+@mixin smUpMedia {  @media (min-width: 576px) {  @content ; } }
+
+//  start with Medium devices to up
+@mixin mdUpMedia {  @media (min-width: 768px) { @content ; } }
+
+//  start with Large devices to up
+@mixin lgUpMedia {  @media (min-width: 992px) { @content ; } }
+/* ####End ############################################################################# */
